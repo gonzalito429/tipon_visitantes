@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Incluir el archivo de conexión
-require_once '../controllers/Database.php'; // Usa require_once para asegurarte de que se incluya correctamente
+require_once '../config/conexion.php'; // Usa require_once para asegurarte de que se incluya correctamente
 
 // Llamar a la función conectarBD() y almacenar la conexión en una variable
 $conexion = conectarBD();
