@@ -1,17 +1,18 @@
 <?php
 function conectarBD() {
-    $host = "localhost";
+    $host = "dpg-d20fioeuk2gs73c7q290-a";   // Hostname correcto desde Render
     $port = "5432";
-    $dbname = "tipon";
-    $user = "postgres";
-    $password = "123456"; // reemplaza esto
+    $dbname = "entrada_tipon";
+    $user = "entrada_tipon_user";
+    $password = "i4Fv9qZLR9C3THiUGU8LLFNhUypiKR8y";
 
-    $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+    $conn_string = "host=$host port=$port dbname=$dbname user=$user password=$password";
 
-    if (!$conn) {
-        die("❌ Error al conectar a la base de datos PostgreSQL.");
+    $conexion = pg_connect($conn_string);
+
+    if (!$conexion) {
+        die("❌ Error al conectar a la base de datos PostgreSQL");
     }
 
-    return $conn;
+    return $conexion;
 }
-?>
