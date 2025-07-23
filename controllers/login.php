@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'controllers/conexion.php';
+require_once '../config/conexion.php';
 
 $conexion = conectarBD();
 
