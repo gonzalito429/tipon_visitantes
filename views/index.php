@@ -40,8 +40,8 @@ if (!$consulta) {
 
   <table border ="1">
     <tr>
-      <th>Nombre</th>
       <th>DNI</th>
+      <th>Nombre</th>
       <th>Fecha</th>
       <th>Hora Entrada</th>
       <th>Hora Salida</th>
