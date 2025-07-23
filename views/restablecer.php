@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../config/conexion.php';
+require_once '../config/Database.php';
 $conexion = conectarBD();
 
 // Procesar si se envió el formulario
