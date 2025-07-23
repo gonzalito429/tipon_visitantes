@@ -14,4 +14,4 @@ function conectarBD() {
 
     return $conn;
 }
-?>
+
