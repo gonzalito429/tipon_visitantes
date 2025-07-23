@@ -2,7 +2,7 @@
 function conectarBD() {
     $host = "localhost";
     $port = "5432";
-    $dbname = "tipon_db";
+    $dbname = "tipon";
     $user = "postgres";
     $password = "123456"; // reemplaza esto
 
