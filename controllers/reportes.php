@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Incluir conexión
-require_once '../config/Database.php';
+require_once '../controllers/Database.php';
 
 try {
     $conexion = conectarBD();
