@@ -7,7 +7,7 @@ $conexion = conectarBD(); // ¡Aquí es donde defines $conexion!
 $accion = $_POST['accion'];
 
 if ($accion === 'entrada') {
-    $nombre = $_POST['nombre y apellido'];
+    $nombre = $_POST['nombre'];
     $dni = $_POST['dni'];
     $fecha = $_POST['fecha'];
     $hora = $_POST['hora'];
