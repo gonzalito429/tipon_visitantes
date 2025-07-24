@@ -48,7 +48,7 @@ if (!$consulta) {
     <?php while ($row = pg_fetch_assoc($consulta)): ?>
       <tr>
         <td><?= htmlspecialchars($row['dni']) ?></td>
-        <td><?= htmlspecialchars($row['nombre y Apellido']) ?></td>
+        <td><?= htmlspecialchars($row['nombre']) ?></td>
         <td><?= htmlspecialchars($row['fecha']) ?></td>
         <td><?= htmlspecialchars($row['hora_entrada']) ?></td>
         <td><?= $row['hora_salida'] ?: '<i>No registrada</i>' ?></td>
