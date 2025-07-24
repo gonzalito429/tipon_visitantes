@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../controllers/Database.php'; // Asegúrate de incluir el archivo
+require_once '../config/conexion.php'; // Asegúrate de incluir el archivo
 
 $conexion = conectarBD(); // ¡Aquí es donde defines $conexion!
 
