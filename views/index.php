@@ -31,16 +31,17 @@ if (!$consulta) {
   <h1> Registro de Visitantes</h1>
 
   <p>
-    <a href="index.php"> Inicio</a> |
+    <a href="index.php">Inicio</a> |
     <a href="registrar.php"> Registrar Entrada</a> |
     <a href="salida.php"> Registrar Salida</a> |
+    <a href="../controllers/reportes.php">Reportes</a> |
     <a href="../controllers/logout.php"> Cerrar Sesión</a>
   </p>
 
   <table border ="1">
-      <tr>
+    <tr>
+      <th>Nombre</th>
       <th>DNI</th>
-      <th>Nombre </th>
       <th>Fecha</th>
       <th>Hora Entrada</th>
       <th>Hora Salida</th>
