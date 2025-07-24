@@ -18,11 +18,14 @@ if ($accion === 'entrada') {
         echo "Este visitante ya tiene una entrada registrada hoy.";
         exit;
     }
+$insert = "INSERT INTO visitantes (nombre, dni, fecha, hora_entrada) VALUES ($1, $2, $3, $4)";
+$result = pg_query_params($conexion, $insert, [$nombre, $dni, $fecha, $hora]);
 
-    $insert = "INSERT INTO visitantes (nombre, dni, fecha, hora_entrada) VALUES ($1, $2, $3, $4)";
-    $result = pg_query_params($conexion, $insert, [$nombre, $dni, $fecha, $hora]);
-
-    echo $result ? "Entrada registrada con éxito." : "Error al registrar entrada.";
+if ($result) {
+    echo "Visitante registrado correctamente.";
+} else {
+    echo "Error al registrar entrada.";
+}
 }
 
 if ($accion === 'salida') {
