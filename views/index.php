@@ -38,7 +38,7 @@ if (!$consulta) {
   </p>
 
   <table border ="1">
-    <tr>
+      <tr>
       <th>DNI</th>
       <th>Nombre </th>
       <th>Fecha</th>
