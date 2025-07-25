@@ -34,7 +34,6 @@ if (!$consulta) {
     <a href="index.php">Inicio</a> |
     <a href="registrar.php"> Registrar Entrada</a> |
     <a href="salida.php"> Registrar Salida</a> |
-
     <a href="../controllers/logout.php"> Cerrar Sesión</a>
   </p>
 
